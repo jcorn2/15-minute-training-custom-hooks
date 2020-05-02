@@ -14,5 +14,8 @@
       "matches": ["<all_urls>"],
       "js": ["content-script.js"]
     }
+  ],
+  "permissions": [
+    "storage"
   ]
 }
