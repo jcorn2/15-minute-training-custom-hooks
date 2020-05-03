@@ -8,11 +8,12 @@ function useFetch(url) {
         const fetchData = async (url) => {
             const response = await fetch(url);
             const json = await response.json();
+            console.log(json)
             setData(json);
             setLoading(false);
         };
 
-        setTimeout(() => fetchData(url), 2000);
+        fetchData(url);
     }, [url]);
 
     return { data, loading };
